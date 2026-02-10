@@ -1,0 +1,5 @@
+/node_modules
+/.nitro
+/cloudflare
+/.output
+/package-lock.json

@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "format": "prettier --log-level warn --write \"src/**/*.{ts,json}\"",
+    "build:cloudflare": "NITRO_PRESET=cloudflare npm run build",
+    "prepare": "nitro prepare",
+    "preview": "node .output/server/index.mjs",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260117.0",
+    "@types/node": "^25.0.9",
+    "nitropack": "latest",
+    "prettier": "3.3.3",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.59.2"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11",
+    "h3": "^1.15.5",
+    "iso-639-1": "^3.1.5",
+    "iso-639-3": "^3.0.1",
+    "nitropack": "^2.13.1",
+    "number-to-words": "^1.2.4",
+    "xz-decoder-js": "^1.0.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

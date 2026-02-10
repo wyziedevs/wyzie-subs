@@ -1,0 +1,10 @@
+{
+  "extends": "./.nitro/types/tsconfig.json",
+  "exclude": [
+    "eslint.config.mjs",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "node_modules",
+    "**/*.js"
+  ],
+}
