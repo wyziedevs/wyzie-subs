@@ -3,7 +3,9 @@ name = "sub-scraping"
 main = "./.output/server/index.mjs"
 compatibility_date = "2025-02-14"
 toconfig = "./tsconfig.json"
-route = { pattern = "sub.wyzie.io", custom_domain = true }
+# No route / custom domain here on purpose: this public repo is a shell without src/.
+# Production (sub.wyzie.io) is deployed from the private repo only, so an accidental
+# `wrangler deploy` from this repo must never claim the production domain.
 
 minify = true
 
